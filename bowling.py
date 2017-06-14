@@ -15,9 +15,9 @@ class Game:
             if self._is_strike(roll_index):  # strike
                 score += 10 + self._strike_bonus(roll_index)
                 roll_index += 1
-            elif self._is_spare(roll_index):
-                score += 10 + self._spare_bonus(roll_index)
-                roll_index += 2
+            # elif self._is_spare(roll_index):
+            #     score += 10 + self._spare_bonus(roll_index)
+            #     roll_index += 2
             else:
                 score += self._frame_score(roll_index)
                 roll_index += 2
